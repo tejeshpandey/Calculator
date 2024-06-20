@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7b5a68;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 320px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calc-text {
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5em;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+}
+
+.calc-text p {
+    margin: 0;
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button.operations {
+    background-color: #f9a825;
+}
+
+button.operations:hover {
+    background-color: #f57f17;
+}
+
+button.key-others {
+    background-color: #888;
+}
+
+button.key-others:hover {
+    background-color: #777;
+}
+
+button.numbers, button.key-zero {
+    background-color: #333;
+    color: #fff;
+}
+
+button.numbers:hover, button.key-zero:hover {
+    background-color: #555;
+}
+
+button.key-zero {
+    grid-column: span 2;
+}
+h1{
+    color: #000;
+    text-align: center;
+    text-decoration: wavy;
+}
